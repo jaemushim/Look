@@ -1,0 +1,146 @@
+.sub-sec-title .title {
+    padding: 0;
+}
+/* 테이블 */
+.course-regist {
+    background-color: #000;
+    color: #fff;
+}
+
+.course-regist caption,
+.course-regist th {
+    font-size: 0;
+}
+.course-regist tbody tr {
+    height: 110px;
+}
+.course-regist tbody tr {
+    border: 0;
+    border-bottom: 1px solid #777;
+}
+.course-regist table {
+    border-top: 2px solid #fff;
+}
+.course-regist .title-box {
+    padding: 0 1rem;
+}
+.course-regist .title {
+    font-size: 12px;
+}
+.course-regist img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+.course-regist .tag span {
+    background-color: #009f57;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.07rem 0.2rem;
+    font-size: 11px;
+    font-weight: 500;
+}
+.course-regist .tag span.sale {
+    background-color: #f65b5b;
+}
+.course-regist .tag span.video {
+    background-color: #f68a5b;
+}
+.course-regist .tag span.new {
+    background-color: #ff5cb4;
+}
+.course-regist h2 {
+    font-size: 16px;
+    padding-top: 0.2rem;
+}
+.course-regist .bottom {
+    display: block;
+    padding-top: 0.7rem;
+    color: #aaa;
+    font-size: 13px;
+}
+.course-regist .price span {
+    display: block;
+}
+.course-regist .price span:first-child {
+    color: #aaa;
+    font-size: 12px;
+}
+.course-regist .price span:nth-child(2) {
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+}
+.course-regist .price strong {
+    color: #fae92a;
+    margin: 0 0.2rem;
+}
+.course-regist .button button {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    background-color: #e83c19;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0.2rem;
+    transition: background-color 0.1s ease 0s;
+}
+.course-regist .button button:nth-child(2) {
+    background-color: #3399ff;
+}
+.course-regist .button button:nth-child(1):hover {
+    background-color: #ea4f2f;
+}
+.course-regist .button button:nth-child(2):hover {
+    background-color: #47a3ff;
+}
+.course-regist.n2 {
+    padding-bottom: 5rem;
+}
+@media only screen and (max-width: 850px) {
+    .course-regist colgroup col:nth-child(1),
+    .course-regist colgroup col:nth-child(2),
+    .course-regist thead tr th:nth-child(1),
+    .course-regist thead tr th:nth-child(2),
+    .course-regist tbody tr td:nth-child(1),
+    .course-regist tbody tr td:nth-child(2) {
+        display: none;
+    }
+    .course-regist .container {
+        padding: 0.5rem;
+    }
+    .course-regist .title-box {
+        padding: 0.3rem;
+    }
+    .course-regist .price span:first-child {
+        font-size: 11px;
+    }
+    .course-regist .price span strong {
+        display: block;
+    }
+    .course-regist .price span:nth-child(2) {
+        font-size: 16px;
+    }
+    .course-regist .button button {
+        font-size: 12px;
+    }
+    .course-regist h2 {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .course-regist .price {
+        text-align: right;
+        padding-right: 3rem;
+    }
+}
+
+/* 2번째 테이블 */
+.sub-sec-title.n2 {
+    padding-top: 5rem;
+}
+.course-regist.n2 .price > * {
+    visibility: hidden;
+}

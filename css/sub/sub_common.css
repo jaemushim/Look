@@ -1,0 +1,192 @@
+/* 서브 탑 배너 */
+.top-banner {
+    height: 600px;
+    background: url(/img/sub_page/회사안내/main_banner.jpg) center / cover no-repeat;
+    color: #fff;
+    padding: 3.5rem 0;
+}
+.container {
+    padding: 0 1rem;
+}
+.top-banner h1 {
+    font-size: 36px;
+    max-width: 500px;
+}
+.top-banner .line {
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    margin: 1.2rem 0;
+}
+.top-banner p {
+    font-size: 12px;
+    max-width: 400px;
+}
+@media only screen and (max-width: 600px) {
+    .top-banner h1 {
+        font-size: 28px;
+    }
+    .top-banner {
+        height: 280px;
+    }
+}
+
+/* 서브 띠 배너 */
+.bar-banner {
+    background-color: #000;
+    padding: 1.5rem 0;
+}
+.bar-banner .title {
+    color: #fff;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+}
+.bar-banner .banner {
+    background: url(/img/sub_page/강사소개/bar_banner_01.png) center / 100% no-repeat;
+    height: 220px;
+    font-size: 0;
+}
+.bar-banner .slick-dots {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 2rem;
+    display: flex;
+}
+.bar-banner .slick-dots > * {
+    margin: 0 0.3rem;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.27);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bar-banner .slick-dots .slick-active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.bar-banner .slick-dots > * > button {
+    font-size: 0;
+}
+@media only screen and (min-width: 1200px) {
+    .bar-banner .banner {
+        margin: 0 1rem;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .bar-banner .slick-dots {
+        bottom: 3rem;
+    }
+}
+
+/* 강좌안내 탑 배너 */
+.course-top-banner .slide {
+    height: 600px;
+
+    color: #fff;
+    padding: 3.5rem 0;
+}
+.course-top-banner .slide.n1 {
+    background: url(/img/sub_page/course_guide/01.png) center / 100% 100% no-repeat;
+}
+.course-top-banner .slide.n2 {
+    background: url(/img/sub_page/course_guide/02.png) center / 100% 100% no-repeat;
+}
+.container {
+    padding: 0 1rem;
+}
+.top-banner h1 {
+    font-size: 36px;
+    max-width: 500px;
+}
+.top-banner .line {
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    margin: 1.2rem 0;
+}
+.top-banner p {
+    font-size: 12px;
+    max-width: 400px;
+}
+@media only screen and (max-width: 600px) {
+    .top-banner h1 {
+        font-size: 28px;
+    }
+    .top-banner {
+        height: 280px;
+    }
+}
+.course-top-banner .slick-dots {
+    position: absolute;
+    display: flex;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.course-top-banner .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+    font-size: 0;
+    vertical-align: middle;
+}
+.course-top-banner .slick-dots .slick-active button {
+    background-color: #000;
+}
+.course-top-banner .slick-dots {
+    position: absolute;
+    display: flex;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.course-top-banner .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+    font-size: 0;
+    vertical-align: middle;
+}
+.course-top-banner .slick-dots .slick-active button {
+    background-color: #000;
+}
+
+/* 강좌안내 타이틀 */
+.sec-title .tag .item {
+    font-size: 14px;
+    margin-right: 1rem;
+    color: #ccc;
+    padding-top: 0.5rem;
+}
+
+.sec-title {
+    background-color: #000;
+}
+.sec-title .title {
+    color: #fff;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+/* 퀵 메뉴 타이틀 추가 */
+.sub-sec-title {
+    padding-top: 3.5rem;
+    padding-bottom: 0.7rem;
+    background-color: #000;
+    text-align: left;
+    color: #fff;
+}
+.sub-sec-title .title {
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+}
+.sub-sec-title .title p {
+    font-size: 13px;
+    color: #ddd;
+    padding: 0.3rem 0;
+}

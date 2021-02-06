@@ -1,0 +1,143 @@
+/* 서브 탑 배너 */
+.top-banner {
+    background: url(/img/sub_page/강사소개/main_banner.jpg) center / 100% 100% no-repeat;
+}
+
+/* 연표 */
+.history .container {
+    position: relative;
+    padding: 1rem 0;
+}
+.history .row {
+    position: relative;
+}
+.history .container::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #0f1011;
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+}
+
+.history .sub-tit {
+    font-weight: 500;
+    font-size: 18px;
+}
+.history h2 {
+    padding-bottom: 0.3rem;
+    font-size: 22px;
+}
+.history p {
+    color: #0f1011;
+    font-size: 18px;
+}
+.history ol > li {
+    padding-bottom: 0.5rem;
+}
+.history .history-box {
+    padding: 10px 18px;
+    position: relative;
+    z-index: 3;
+    width: 50%;
+}
+.history .row .img-box {
+    position: absolute;
+    top: 50px;
+    width: 400px;
+}
+.history .row .img-box.left {
+    left: 15%;
+}
+.history .row .img-box.right {
+    right: 5%;
+    top: 120px;
+}
+.history .row .img-box img {
+    display: block;
+    margin: 0 auto;
+    padding: 0.3rem 0.5rem;
+}
+.history .row .img-box .row {
+    display: inline-block;
+    margin-left: 4rem;
+}
+.history .row.n2 .img-box img {
+    display: inline-block;
+}
+.history .row.n3 .img-box img {
+    width: 200px;
+}
+.history img.left {
+    right: 60%;
+}
+.history img.right {
+    left: 60%;
+}
+.history .his-right {
+    left: 50%;
+}
+.history .his-left {
+    left: 0;
+    text-align: right;
+}
+.history .history-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #0f1011;
+    border-radius: 50%;
+    top: 20px;
+    z-index: 2;
+    left: -7px;
+}
+.history .history-box.his-left::after {
+    right: -7px;
+    left: auto;
+}
+@media only screen and (max-width: 1000px) {
+    .history .container::after {
+        left: 15px;
+    }
+    .history .row {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .history .row .img-box {
+        position: relative;
+    }
+    .history .his-right {
+        left: 15px;
+    }
+    .history .row .img-box.left {
+        left: auto;
+        top: auto;
+    }
+    .history .his-left {
+        text-align: left;
+        left: 15px;
+    }
+    .history .history-box.his-left::after {
+        left: -7px;
+        right: auto;
+    }
+    .history .history-box {
+        width: 80%;
+    }
+    .history .row .img-box.right {
+        top: 0;
+        right: auto;
+        left: 30px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .history .row .img-box {
+        width: 250px;
+    }
+    .history .row .img-box .row {
+        margin-left: auto;
+    }
+}

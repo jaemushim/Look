@@ -1,0 +1,27 @@
+/* 퀵 메뉴 타이틀 박스 */
+.quick-menu .container:first-child {
+    max-width: 1200px;
+}
+.quick-menu .title-box {
+    padding: 1rem;
+    background-color: #000;
+}
+
+.quick-menu .title-box .title {
+    text-align-last: left;
+}
+.quick-menu .title {
+    position: relative;
+    color: #fff;
+    padding: 0 1rem;
+}
+.quick-menu .title p {
+    font-size: 13px;
+    color: #ddd;
+    padding: 0.3rem 0;
+}
+
+/* 하단 배너 */
+.bar-banner .banner {
+    background: url(/img/sub_page/course_guide/bottom_ban.png) center / 100% no-repeat;
+}

@@ -1,0 +1,313 @@
+/* Landing banner */
+.landing-banner {
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.landing-banner .slide {
+    outline: none;
+    height: 600px;
+    font-size: 0;
+}
+.landing-banner .slide.n1 {
+    background: url(/img/landing_slide/01.jpg) center / 100% 100% no-repeat;
+}
+.landing-banner .slide.n2 {
+    background: url(/img/landing_slide/02.png) center / 100% 100% no-repeat;
+}
+.landing-banner .slide.n3 {
+    background: url(/img/landing_slide/03.png) center / 100% 100% no-repeat;
+}
+.landing-banner .slide.n4 {
+    background: url(/img/landing_slide/04.png) center / 100% 100% no-repeat;
+}
+.landing-banner .slide img {
+    min-height: 300px;
+}
+.landing-banner .slider-nav button {
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 70px;
+    background: url(/img/main/visual_btn_prev.png) no-repeat;
+}
+.landing-banner .slider-nav .prev {
+    left: 50%;
+    margin-left: -800px;
+}
+.landing-banner .slider-nav .next {
+    right: 50%;
+    margin-right: -800px;
+    background: url(/img/main/visual_btn_next.png) no-repeat;
+}
+.landing-banner .slick-dots {
+    position: absolute;
+    display: flex;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.landing-banner .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+    font-size: 0;
+    vertical-align: middle;
+}
+.landing-banner .slick-dots .slick-active button {
+    background-color: #000;
+}
+.landing-banner .slick-dots .visual-play-stop button {
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+}
+.landing-banner .slick-dots .visual-play-stop span {
+    font-size: 0;
+}
+.landing-banner .slick-dots .visual-play-stop i {
+    background: url(/img/main/pause.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: inherit;
+    height: inherit;
+}
+.landing-banner .slick-dots .visual-play-stop button[aria-pressed='true'] i {
+    background: url(/img/main/play.png) no-repeat;
+}
+@media only screen and (max-width: 960px) {
+    .landing-banner .slide {
+        height: 60vw;
+    }
+}
+
+@keyframes rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(-20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+/* 이번 주 인기 강좌 */
+.hot-lect {
+    background-color: #000;
+    padding: 1.5rem 0;
+}
+.hot-lect .title {
+    color: #fff;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+}
+.hot-lect .banner {
+    background: url(/img/main/pop_lect.jpg) center / 100% no-repeat;
+    height: 220px;
+    font-size: 0;
+}
+.hot-lect .slick-dots {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 2rem;
+    display: flex;
+}
+.hot-lect .slick-dots > * {
+    margin: 0 0.3rem;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.27);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.hot-lect .slick-dots .slick-active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.hot-lect .slick-dots > * > button {
+    font-size: 0;
+}
+@media only screen and (min-width: 1200px) {
+    .hot-lect .banner {
+        margin: 0 1rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .hot-lect .banner {
+        width: 100%;
+        background: url(/img/main/pop_lect.jpg) left / cover no-repeat;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .hot-lect .slick-dots {
+        bottom: 3rem;
+    }
+}
+
+/* 수강생 리뷰 */
+.review .slider-wrap {
+    position: relative;
+}
+.review-title {
+    background-color: #000;
+    padding-top: 3.5rem;
+    position: relative;
+}
+.review .title {
+    color: #fff;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.review .title p {
+    font-size: 13px;
+    color: #ddd;
+    padding: 0.3rem 0;
+}
+.review .slider-nav button {
+    position: absolute;
+    top: 40%;
+    width: 70px;
+    height: 70px;
+    background: url(/img/main/visual_btn_prev.png) no-repeat;
+}
+.review .slider-nav .prev {
+    left: 0;
+    margin-left: -50px;
+}
+.review .slider-nav .next {
+    right: 50%;
+    margin-right: -570px;
+    background: url(/img/main/visual_btn_next.png) no-repeat;
+}
+.review .card-dec {
+    padding: 2rem 0;
+    background-color: #1e2123;
+}
+.review .card-dec .container {
+    max-width: 1640px;
+    margin: 0 auto;
+    margin-right: unset;
+    padding-left: 7rem;
+    overflow-x: hidden;
+}
+.review .card-deck .slick-slide {
+    margin: 0 1rem;
+}
+.review .slick-list {
+    margin-right: -5%;
+}
+@media only screen and (max-width: 800px) {
+    .review .slick-list {
+        margin-right: -25%;
+    }
+    .review .card-dec {
+        padding: 1rem 0;
+    }
+    .review .title {
+        padding-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .review .slider-nav button {
+        display: none !important;
+    }
+    .review .card-dec .container {
+        padding: 0;
+    }
+    .review .control {
+        position: absolute;
+        right: 1rem;
+        top: -0.5rem;
+        color: #fff;
+    }
+    .review .control button {
+        width: 1.7rem;
+        height: 2.6rem;
+        margin: 0.4rem;
+        background: url(/img/main/arrow_sm.png) no-repeat 50% 50%/1.3rem 2rem;
+        background-size: 50% 50%;
+        color: transparent;
+    }
+    .review .control .next {
+        transform: translateX(0) rotate(180deg);
+    }
+}
+.title,
+.title > h2 {
+    font-size: 20px;
+}

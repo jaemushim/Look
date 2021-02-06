@@ -1,0 +1,90 @@
+/* 서브 탑 배너 */
+.top-banner {
+    background: url(/img/sub_page/회사안내/main_banner.jpg) center / cover no-repeat;
+}
+/* 섹션 1 */
+.section-1 {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 0;
+}
+.section-1 .row {
+    padding-bottom: 2.5rem;
+}
+.section-1 h2 {
+    padding-bottom: 0.7rem;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    font-weight: 400;
+}
+.section-1 h2:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    height: 22px;
+    width: 1px;
+    display: block;
+    background-color: #fff;
+}
+.section-1 p {
+    font-size: 16px;
+    color: #ccc;
+    max-width: 900px;
+}
+
+/* 섹션 2 */
+.section-2 {
+    background-color: #1e2123;
+    color: #fff;
+    padding: 3rem 0;
+}
+.section-2 .title {
+    font-size: 24px;
+    padding-bottom: 1.5rem;
+}
+.section-2 .row {
+    padding-bottom: 4rem;
+}
+.section-2 h2 {
+    padding-bottom: 0.7rem;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    font-weight: 400;
+}
+.section-2 h2:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    height: 22px;
+    width: 1px;
+    display: block;
+    background-color: #fff;
+}
+.section-2 p {
+    font-size: 16px;
+    color: #ccc;
+    max-width: 900px;
+}
+.section-2 .row p:not(:last-of-type),
+.section-2 .row-2 p:not(:last-of-type) {
+    padding-bottom: 2rem;
+}
+
+/* 섹션 2 */
+.section-3 {
+    text-align: center;
+    background-color: #0f1011;
+    color: #fff;
+    padding: 3rem 0;
+    font-size: 20px;
+}
+.section-3 .quo {
+    font-size: 30px;
+}
+.section-3 .text {
+    padding-bottom: 0.8rem;
+}
